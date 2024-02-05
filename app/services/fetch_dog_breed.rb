@@ -7,8 +7,7 @@ class FetchDogBreed
   end
 
   def call
-    image_url = DogApiAdapter.find(name)
-    DogBreed.create(name: name, image_url: image_url)
+    DogApiAdapter.find(name)
   rescue Errors::DogBreedNotFoundError => e
     Rails.logger.warn(e.message)
     nil

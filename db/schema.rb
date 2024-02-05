@@ -10,13 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_02_04_135103) do
-
-  create_table "dog_breeds", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "image_url"
-  end
+ActiveRecord::Schema.define(version: 2024_02_05_085111) do
 
 end
