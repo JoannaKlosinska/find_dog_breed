@@ -1,0 +1,12 @@
+<h1>Find Dog Breed</h1>
+
+<%= turbo_frame_tag "form" do %>
+  <%= render partial: 'shared/form' %>
+<% end %>
+
+<% if @image_url.present? %>
+  <div class="mt-4">
+		<h2><%= @name %></h2>
+    <%= image_tag @image_url, class: "img-fluid", alt: "Breed Photo" %>
+  </div>
+<% end %>

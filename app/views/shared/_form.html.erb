@@ -1,0 +1,10 @@
+<%= turbo_frame_tag 'form-frame' do %>
+  <%= form_with(url: dog_breeds_path, method: 'get', class: "d-flex justify-content-between") do %>
+    <div class="form-group">
+      <%= label_tag :breed, "Breed:", class: "form-label" %>
+      <%= text_field_tag :breed, nil, class: "form-control" %>
+    </div>
+
+    <%= submit_tag "Submit", class: "btn btn-primary" %>
+  <% end %>
+<% end %>
